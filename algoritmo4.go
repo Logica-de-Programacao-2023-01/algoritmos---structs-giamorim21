@@ -15,13 +15,13 @@ type musicas struct {
 	duracao float64
 }
 
-type Playlist struct {
+type Playlists struct {
 	nome   string
 	musica []musicas
 }
 
 func main() {
-	p := Playlist{
+	p := Playlists{
 		nome: "pop",
 		musica: []musicas{
 			{
@@ -40,7 +40,7 @@ func main() {
 
 }
 
-func imprimaPlaylist(p Playlist) {
+func imprimaPlaylist(p Playlists) {
 	fmt.Println("Nome da Playlist:", p.nome)
 	var soma float64 = 0
 	for _, a := range p.musica {
